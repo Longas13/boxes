@@ -1,12 +1,12 @@
 import React from "react";
 
-type GridViewProps<T> = {
+export type GridViewProps<T> = {
   grid: (T | null)[][];
   renderCell: (item: T, idx: number) => React.ReactNode;
   className?: string;
 };
 
-function GridView<T>({ grid, renderCell, className = "" }: GridViewProps<T>) {
+const GridView = <T,>({ grid, renderCell, className = "" }: GridViewProps<T>) => {
   return (
     <div className={`grid grid-cols-3 grid-rows-3 gap-4 ${className}`}>
       {grid
@@ -22,6 +22,6 @@ function GridView<T>({ grid, renderCell, className = "" }: GridViewProps<T>) {
         )}
     </div>
   );
-}
+};
 
 export default GridView;
