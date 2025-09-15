@@ -10,7 +10,7 @@ const GridViewButton = () => {
 
   return (
     <button
-      className={`w-ful h-full inline-flex items-center justify-center border border-gray-500 rounded-lg cursor-pointer p-0 ${
+      className={`w-full h-full inline-flex items-center justify-center border border-gray-500 rounded-lg cursor-pointer p-0 ${
         active ? "bg-violet-500" : "bg-gray-50"
       }`}
       aria-label="Grid View button"
