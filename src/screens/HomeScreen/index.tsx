@@ -27,7 +27,6 @@ const HomeScreen = () => {
     });
     clearActiveButtons();
   };
-  console.log(listActiveButtons);
 
   return (
     <div className="flex items-center justify-center min-h-screen">
